@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .infoText {
+    @apply p-4 bg-gray-700/50 rounded-lg max-w-[18.75rem];
+  }
+
+  .chatRow {
+    @apply rounded-lg px-5 py-3 grid items-center space-x-2 hover:bg-gray-700/70 cursor-pointer text-gray-300 transition-all duration-200 ease-out;
+  }
+}
+
+@layer utilities {
+  .grid-main-page-real-estate {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-height: 100vh;
+  }
+
+  .grid-side-bar-real-estate {
+    display: grid;
+    grid-template-rows: 90%;
+  }
+
+  .grid-new-chat-real-estate {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-chat-row-real-estate {
+    display: grid;
+    grid-template-columns: 12.5% 80%;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .grid-chat-and-chat-input {
+    display: grid;
+    grid-template-rows: 90%;
+  }
+
+  .grid-chat-input-real-estate {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .grid-message-real-estate {
+    display: grid;
+    grid-template-columns: 7.5% 92.5%;
+    align-items: center;
+    gap: 0rem;
+  }
+}
